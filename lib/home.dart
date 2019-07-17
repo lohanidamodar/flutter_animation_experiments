@@ -22,6 +22,10 @@ class HomePage extends StatelessWidget {
               onPressed: () => Navigator.pushNamed(context, 'anim2'),
               child: Text("2. Reveal animation"),
             ),
+            RaisedButton(
+              onPressed: () => Navigator.pushNamed(context, 'anim3'),
+              child: Text("3. Animated widget"),
+            ),
           ],
         ),
       ),
