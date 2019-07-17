@@ -1,3 +1,4 @@
+import 'package:animationtest/anim1.dart';
 import 'package:flutter/material.dart';
 
 import 'home.dart';
@@ -13,6 +14,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: HomePage(),
+      routes: {
+        'anim1' : (_) => AnimationOne(),
+      },
     );
   }
 }
