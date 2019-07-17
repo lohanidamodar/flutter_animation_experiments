@@ -1,4 +1,5 @@
 import 'package:animationtest/anim1.dart';
+import 'package:animationtest/anim2.dart';
 import 'package:flutter/material.dart';
 
 import 'home.dart';
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       home: HomePage(),
       routes: {
         'anim1' : (_) => AnimationOne(),
+        'anim2' : (_) => AnimationTwo(),
       },
     );
   }

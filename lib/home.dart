@@ -17,7 +17,11 @@ class HomePage extends StatelessWidget {
             RaisedButton(
               onPressed: () => Navigator.pushNamed(context, 'anim1'),
               child: Text("1. Show Hide on Click"),
-            )
+            ),
+            RaisedButton(
+              onPressed: () => Navigator.pushNamed(context, 'anim2'),
+              child: Text("2. Reveal animation"),
+            ),
           ],
         ),
       ),
