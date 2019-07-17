@@ -14,7 +14,14 @@ class _AnimationThreeState extends State<AnimationThree> with SingleTickerProvid
   @override
   void initState() {
     controller = AnimationController(vsync: this, duration: const Duration(seconds: 2));
-    animation = Tween<double>(begin: 0, end: 300).animate(controller);
+    animation = Tween<double>(begin: 0, end: 300).animate(controller)
+      ..addStatusListener((status){
+        if(status == AnimationStatus.completed) {
+          controller.reverse();
+        }else if(status == AnimationStatus.dismissed){
+          controller.forward();
+        }
+      });
     controller.forward();
     super.initState();
   }
