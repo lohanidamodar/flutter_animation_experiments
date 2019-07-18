@@ -1,6 +1,7 @@
 import 'package:animationtest/anim1.dart';
 import 'package:animationtest/anim2.dart';
 import 'package:animationtest/anim3.dart';
+import 'package:animationtest/anim5.dart';
 import 'package:flutter/material.dart';
 
 import 'anim4.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         'anim2' : (_) => AnimationTwo(),
         'anim3' : (_) => AnimationThree(),
         'anim4' : (_) => AnimationFour(),
+        'anim5' : (_) => AnimationFive(),
       },
     );
   }
